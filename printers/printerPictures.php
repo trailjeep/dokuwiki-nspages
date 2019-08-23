@@ -28,7 +28,12 @@ class nspages_printerPictures extends nspages_printer {
                                 $face     = 'https://secure.gravatar.com/avatar/13455b965f20bdea48fe1f1978125ea6%253Fs%253D16%2526d%253Dmm%2526r%253Dg%2526.png?s=16';
                                 $created  = date('Y-m-d', $meta['date']['created']);
                                 $modified = date('Y-m-d', $meta['date']['modified']);
-                                $image    = ml(current(array_filter(array($meta['relation']['firstimage'], key($meta['relation']['media']), $default, 'wiki:dokuwiki-128.png'))), self::$_dims, true);
+								if (is_array($meta['relation']['media']) {
+									$media = key($meta['relation']['media']);
+								} else {
+									$media = '';
+								}
+                                $image    = ml(current(array_filter(array($meta['relation']['firstimage'], $media, $default, 'wiki:dokuwiki-128.png'))), self::$_dims, true);
                                 $tags     = $meta['subject'];
                                 $tagss    = '<span>';
                                 if ( !empty($tags)) {
