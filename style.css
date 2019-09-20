@@ -79,9 +79,14 @@ span.nspagesImagesModeSource {
 span.nspagesImagesModeTags {
     font-size: small;
 }
+span.nspagesImagesModeTags i {
+	font-size: smaller;
+	color: #ccc;
+}
 
 span.nspagesImagesModeAuthor {
     font-size: small;
+	color: #ccc;
 }
 
 /* ---------- RTL --------------*/

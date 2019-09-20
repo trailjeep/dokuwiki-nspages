@@ -38,7 +38,7 @@ class nspages_printerPictures extends nspages_printer {
                                 $tagss    = '<span>';
                                 if ( !empty($tags)) {
                                         foreach ($tags as $tag) {
-                                                $tagss .= '<a class="nspagesImagesModeTag label label-default" title="tag:' . $tag . '" rel="tag" href="' . $DOKU_URL . 'tag/'.$tag.'?do=showtag&tag='.$tag.'"><i class="fa fa-fw fa-tag"></i> '.$tag.'</a> ';
+                                                $tagss .= '<a class="nspagesImagesModeTag label label-default" title="tag:' . $tag . '" rel="tag" href="' . $DOKU_URL . 'tag/'.$tag.'?do=showtag&tag='.$tag.'"><i class="fa fa-fw fa-tag"></i>'.$tag.'</a> ';
                                         }
                                 }
                                 $tagss   .= '</span>';
