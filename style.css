@@ -97,6 +97,7 @@ span.nspagesImagesModeEdit {
 span.nspagesImagesModeEdit a.button {
     color: #ccc;
     background-color: #333;
+	vertical-align: middle;
 }
 
 span.nspagesImagesModeEdit a.button:focus, span.nspagesImagesModeEdit a.button:hover, span.nspagesImagesModeEdit a.button:active {
