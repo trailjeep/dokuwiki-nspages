@@ -34,6 +34,7 @@ class nspages_printerPictures extends nspages_printer {
 									$media = '';
 								}
                                 $image    = ml(current(array_filter(array($meta['relation']['firstimage'], $media, $default, 'wiki:dokuwiki-128.png'))), self::$_dims, true);
+								$perm     = auth_quickaclcheck($page);
                                 $tags     = $meta['subject'];
                                 $tagss    = '<span>';
                                 if ( !empty($tags)) {
@@ -57,6 +58,9 @@ class nspages_printerPictures extends nspages_printer {
                                     $this->renderer->doc .= '<span class="nspagesImagesModeTags">' . $tagss . '</span> &middot; ';
                                 }
                                 $this->renderer->doc .= '<span class="nspagesImagesModeAuthor"><i class="fa fa-calendar"></i> ' . $created . ' by <img src="' . $face . '" style="vertical-align: sub" /> ' . $author . '</span>';
+								if ($perm >= AUTH_EDIT) {
+									$this->renderer->doc .= ' &middot; <span class="nspagesImagesModeEdit"><a class="button" href="' . $url . '?do=edit" title="Edit in new tab…" target="_blank" rel="nofollow noopener">Edit</a></span>';
+								}
                                 $this->renderer->doc .= '</div><br />';
         }
         $this->renderer->doc .= '</div>';
