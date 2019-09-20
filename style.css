@@ -82,6 +82,7 @@ span.nspagesImagesModeTags {
 span.nspagesImagesModeTags i {
 	font-size: smaller;
 	color: #ccc;
+	padding-right: 0.25em;
 }
 
 span.nspagesImagesModeAuthor {
