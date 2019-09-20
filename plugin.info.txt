@@ -4,4 +4,4 @@ email  guillaume.turri@gmail.com
 date   2019-08-12
 name   nspages plugin
 desc   Presents a toc of the selected namespace using <nspages>
-url    http://www.dokuwiki.org/plugin:nspages
+url    https://github.com/trailjeep/nspages/archive/mypicturemode.zip
