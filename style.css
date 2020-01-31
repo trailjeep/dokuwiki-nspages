@@ -83,13 +83,13 @@ span.nspagesImagesModeTags {
 }
 span.nspagesImagesModeTags i {
 	font-size: smaller;
-	color: #ccc;
+	color: #FF7000;
 	padding-right: 0.25em;
 }
 
 span.nspagesImagesModeAuthor {
     font-size: small;
-	color: #ccc;
+	color: #009966;
 }
 
 span.nspagesImagesModeEdit {
