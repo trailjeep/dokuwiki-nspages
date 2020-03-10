@@ -37,7 +37,7 @@ div.catpagecol  ul.nspagesul {
 
 div.nspagesImagesModeMain {
             padding: 1em;
-            background-color: #111;
+            background-color: @ini_background;
             border-radius: 7px;
 }
 
@@ -45,14 +45,14 @@ div.nspagesImagesModeItem {
     clear: right;
     overflow: hidden;
     padding: 0.5em 0 0.5em 1em;
-    border: 1px solid #009966;
-    background-color: #222;
+    border: 1px solid @ini_border;
+    background-color: @ini_background;
     line-height: 1.75;
     border-radius: 7px;
 }   
 
 div.nspagesImagesModeItem:hover {
-    background-color: #111;
+    background-color: @ini_background_alt;
 }
 
 img.nspagesImagesModeImg {
@@ -83,7 +83,7 @@ span.nspagesImagesModeTags {
 }
 span.nspagesImagesModeTags i {
 	font-size: smaller;
-	color: #FF7000;
+	color: @ini_border;
 	padding-right: 0.25em;
 }
 
@@ -97,14 +97,14 @@ span.nspagesImagesModeEdit {
 }
 
 span.nspagesImagesModeEdit a.button {
-    color: #009966;
-    background-color: #000;
+    color: @ini_text;
+    background-color: @ini_background_site;
 	vertical-align: middle;
+	border-color: @ini_border;
 }
 
 span.nspagesImagesModeEdit a.button:focus, span.nspagesImagesModeEdit a.button:hover, span.nspagesImagesModeEdit a.button:active {
-    border-color: #009966;
-    background-color: #111;
+    border-color: #CCEE88;
     background-image: none;
 }
 
