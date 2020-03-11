@@ -37,7 +37,7 @@ div.catpagecol  ul.nspagesul {
 
 div.nspagesImagesModeMain {
             padding: 1em;
-            background-color: @ini_site_background;
+            background-color: @ini_background_site;
             border-radius: 1em;
 }
 
